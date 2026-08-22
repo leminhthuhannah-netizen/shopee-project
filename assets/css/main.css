@@ -56,12 +56,14 @@
     width: 150px;
     background-color: var(--white-color);
     position: absolute;
-    left: 0;
+    left: 20%;
     top: 200%;
     padding: 8px;
     display: none;
+    right: 50px;
     z-index: 10;
     animation: fadeIn ease-in 0.3s;
+
     
 }
 .qr-header::before{
@@ -91,4 +93,94 @@
     display: block;
 }
 
+
+/* nofication */
+.nofication-container{
+    position: absolute;
+    top:200%;
+    right: 0;
+    width: 400px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: 1px solid #d3d3d3;
+    transform-origin: top right;
+    animation: nofication 0.3s;
+    display: none;
+}
+
+
+.header__navbar-notify:hover .nofication-container {
+    display: block;
+}
+
+.nofication-container-sep::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    left: 0;
+    top: -20px;
+    display: block;
+
+}
+
+
+
+
+.nofication-container h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #999;
+    margin: 0 12px;
+    line-height: 40px;
+    
+}
+
+
+
+
+
+.nofi-list{
+    list-style: none;
+    padding: 0;
+}
+
+
+.nofi-list .text_nofi-list a{
+    text-decoration: none; 
+    color: inherit;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(238, 77, 45,0.1);
+    
+}
+
+.nofi-list .text_nofi-list .nofi-link{
+    width: 50px;
+
+}
+
+.nofi-list .nofi_name-span,
+.nofi-list .nofi_descrip-span{
+    display: block;
+    line-height: 1.5;
+}
+.nofi-list .nofi_descrip-span{
+    font-size: 1rem;
+    color: #999;
+}
+.nofi-list .nofi_name-span{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.nofi-list .text_nofi-list a:hover {
+    background-color: #f7f7f7;
+}
+
+.nofication-container .nofi-footer{
+    text-align: center;
+    color: var(--black-color);
+}
 
