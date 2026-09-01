@@ -4,6 +4,11 @@
     --text-color: #333;
     --primary-color: rgb(238, 77, 45);
 
+    --navbar-height: 35px;
+    --header-height: 140px;
+    --header-with-search: calc(var(--header-height) - var(--navbar-height) - 13px);
+    --cursor-main-select: pointer;
+    
 }
 
 *{
@@ -15,7 +20,7 @@ html {
     line-height: 1.6 rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/* Responsive  */
 .grid {
     width: 1400px;
     max-width: 100%;
@@ -31,6 +36,10 @@ grid__full-width{
     flex-wrap: wrap;
 }
 
+.grid__col{
+
+}
+
 
 /* Animation */
 @keyframes fadeIn {
@@ -38,7 +47,7 @@ grid__full-width{
         opacity: 0;
     }
     to {
-        opacity: 1f;
+        opacity: 1;
     }
 
 }

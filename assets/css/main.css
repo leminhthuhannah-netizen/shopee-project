@@ -1,5 +1,5 @@
 #header{
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
     
 }
@@ -12,6 +12,8 @@
 
 .header__navbar-list{
     list-style: none;
+    padding: 0;
+    cursor: var(--cursor-main-select);
 }
 .header__navbar-item{
     margin: 0 5px;
@@ -75,6 +77,7 @@
     content: "";
     display: block;
     
+    
 
 }
 .app-header {
@@ -105,7 +108,11 @@
     border: 1px solid #d3d3d3;
     transform-origin: top right;
     animation: nofication 0.3s;
+    /* will-change: is nofication with gg understand coder coding animation here
+    and make animation smoothlier than before */
+    will-change: opacity, tranform;
     display: none;
+    z-index: 10;
 }
 
 
@@ -116,12 +123,12 @@
 .nofication-container-sep::before{
     content: "";
     position: absolute;
-    width: 100%;
-    height: 20%;
-    left: 0;
-    top: -20px;
     display: block;
-
+    border: 20px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    left: 88%;
+    top: -35px;
+    z-index: 10;
 }
 
 
@@ -183,4 +190,193 @@
     text-align: center;
     color: var(--black-color);
 }
+
+/* research shoppe */
+.research-header{
+    height: var(--header-with-search);
+    display: flex;
+    align-items: center;
+}
+
+.logo-header {
+    width: 200px;
+}
+.img_logo-header{
+    width: 150px;
+    
+}
+
+.search_items-header{
+    background-color: var(--white-color);
+    flex: 1;
+    height: 40px;
+    border-radius: 2px;
+
+}
+
+/* Cart shopper */
+/* I don't finish cart when customer click cart 
+I can open F8 lesson 11.22 watch again and add new feature*/
+.cart-header{
+    width: 130px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.cart_icon-search{
+    font-size: 3rem;
+}
+.search_items-header{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.search_items-header .input-search{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: var(-);
+    border: none;
+    border-radius: 5px;
+    padding: 0 16px;
+    font-size: 1.4rem;
+    outline: none;
+    
+}
+
+.search_items-header .selection_header{
+    border-left: 1px solid #ccc;
+    padding-left: 16px ;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    width: 120px;
+    position: relative;
+    cursor: var(--cursor-main-select);
+}
+
+.selection_header .icon_select-search{
+    margin: 0 16px 0 5px;
+}
+
+
+.search_items-header .search-btn{
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+    padding: 0 6px;
+    height: 34px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    margin-right: 4px;
+    width: 60px;
+    cursor: var(--cursor-main-select);
+
+}
+
+
+.search_items-header .search-btn:hover{
+    background-color: #fc7156;
+}
+
+
+.selection_header .option_select-search{
+    position: absolute;
+    list-style: none;
+    right: 0;
+    top: 100%;
+    line-height: 2.5;
+    background-color: var(--white-color);
+    padding: 0px;
+    border-radius: 2px;
+    margin: 16px 0px 10px;
+    font-size: 1.4rem;
+    width: 135px;
+    text-align: center;
+    box-shadow: 0 0 3px #ccc;
+    align-items: center;
+    display: none;
+
+}
+
+.option_select-search i{
+    color: var(--primary-color);
+    font-weight: 800;
+    margin-left: 3px ;
+}
+
+.selection_header:hover .option_select-search{
+    display: inline-block;
+    
+    
+}
+
+.option_select-search .option_item-search:hover  {   
+    background-color: #f7f7f7 ;
+}
+
+
+
+.option_select-search--sep::before{
+    content: "";
+    position: absolute;
+    width: 100%;    
+    display: block;
+    left: 0;
+    height: 30px;
+    top: -15px;
+}
+
+/* Update CSS about history user in shopper */
+
+.search_items-header .input_search-wrap{
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+
+.input_search-wrap .input_history-wrap{
+    position: absolute;
+    width: calc(100% - 16px);
+    display: none;
+    top: calc(100% - 10px);
+}
+
+.input_history-list{ 
+    list-style: none;
+    color: var(--black-color);
+    background-color: var(--white-color); 
+    font-size: 1.3rem;
+    line-height: 1.5;
+    box-shadow: 0 0 3px #ccc;
+    padding: 0;
+    border-radius: 3px;
+    
+    
+}
+.description_text-list{
+    color: #d3d3d3;
+    padding: 10px;
+}
+
+
+.description_history-list{
+    cursor: var(--cursor-main-select);
+    padding: 10px;
+}
+
+.description_history-list:hover{
+    background-color: #f7f7f7;
+
+}
+
+.input-search:focus ~ .input_history-wrap {
+    display: block;
+}
+
+
+/* Open video 11.27 */
 
