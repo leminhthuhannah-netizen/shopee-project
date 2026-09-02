@@ -36,7 +36,9 @@ grid__full-width{
     flex-wrap: wrap;
 }
 
+/* Body context */
 .grid__col{
+    
 
 }
 
