@@ -586,3 +586,48 @@ label[for="cars"]{
 
 
 /* footer */
+#footer{
+    border-top: 5px solid var(--primary-color);
+   
+}
+.home-footer{
+    padding: 10px 10px;
+}
+
+.home-footer .footer-heading{
+    font-size: 1.6rem;
+}
+
+.footer-link_list a{
+    list-style: none;
+    text-decoration: none;
+    color: #857385;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 6px 0;
+}
+
+.home-footer .footer-dowloading{
+    display: flex;
+    gap: 10px;
+}
+
+.app_qr-img{
+    width: 40%;
+    border: 1px solid var(--black-color);
+}
+.footer_img-container{
+    flex: 1;
+    padding-top: 10px;
+}
+.app_link-img{
+    width: 100%;
+    padding: 2px;
+}
+
+
+.footer-link_list .footer-item_link:hover{
+    color: var(--primary-color);
+}
+
