@@ -549,3 +549,40 @@ label[for="cars"]{
 
 
 /* Pagination */
+.home_pagination-list{
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    justify-content: center;
+    margin: 40px;
+}
+
+.home_pagination-list a{
+    text-decoration: none;
+    color: #939396;
+}
+
+.number_pagination-list{
+    padding: 5px 16px;
+    margin: 0 20px;
+    color: #939396  ;
+    
+}
+
+ .user_number-list {
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.user_number-list a{
+    color: var(--white-color);
+}
+
+.next_number-list{
+    color: var(--black-color);
+}
+
+
+
+
+/* footer */
